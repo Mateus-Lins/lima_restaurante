@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodeli Landing Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-gray-800 min-h-[900px] overflow-hidden">
-    <!-- Header -->
-    <header class="flex justify-between items-center px-20 py-6 h-[80px]">
-      <div class="flex items-center space-x-2">
-        <div class=fodo>
-            <img src="./imgagens/Frame 1.svg" alt="">
+    <script src="https://kit.fontawesome.com/742db51470.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white w-full">
+
+    <header class="w-full flex justify-between items-center pt-4 px-5 md:px-10">
+        <div class="flex items-center space-x-2">
+            <img src="./img/Logo.png" alt="" class="w-10 md:w-14">
+            <h2 class="font-[Poppins] text-xl md:text-2xl font-bold">Foodeli</h2>
         </div>
-        <span class="text-xl font-semibold">Foodeli</span>
-      </div>
-      <nav class="flex items-center space-x-8 text-sm font-medium">
-        <a href="#" class="text-red-500">Why Foodeli?</a>
-        <button>Services</button>
-        <button>Menu</button>
-        <a href="#">Contact</a>
-      </nav>
-      <button class="text-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
-        </svg>
-      </button>
+
+        <div class="hidden md:flex space-x-8 items-center">
+            <p class="text-[#EB0029] text-lg font-medium">Why Foodeli?</p>
+            <div class="flex items-center space-x-1">
+                <p class="text-lg font-medium">Services</p>
+                <i class="fa-solid fa-chevron-down text-[#EB0029]"></i>
+            </div>
+            <div class="flex items-center space-x-1">
+                <p class="text-lg font-medium">Menu</p>
+                <i class="fa-solid fa-chevron-down text-[#EB0029]"></i>
+            </div>
+            <p class="text-lg font-medium">Contact</p>
+        </div>
+
+        <i class="fa-solid fa-magnifying-glass text-xl"></i>
     </header>
 
-<!-- Main Section (Full Height) -->
-<main class="flex px-20 h-[calc(100vh-160px)] items-center justify-between">
-    <!-- Left -->
-    <div class="max-w-xl">
-      <h1 class="text-6xl font-extrabold leading-tight mb-6">
-        Claim Best Offer<br />
-        on Fast <span class="text-red-500">Food</span> &<br /><span class="text-red-500">Restaurants</span>
-      </h1>
-      <p class="text-gray-600 mb-8 text-lg">
-        Our job is to filling your tummy with delicious food<br />
-        and with fast and free delivery
-      </p>
-      <div class="flex space-x-4">
-        <button class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold text-lg">Get Started</button>
-        <button class="flex items-center px-5 py-3 border border-gray-300 rounded-full text-lg">
-          <span class="bg-yellow-400 w-4 h-4 rounded-full mr-2"></span>
-          Watch Video
-        </button>
-      </div>
-    </div>
-  
-    <!-- Right - Centralized Section -->
-    <div class="flex items-center justify-center w-[600px] h-[600px] relative">
-      <!-- Imagem da comida -->
-      <img src="./imgagens/image 46.png" class="w-[480px] h-[480px] rounded-full z-10 object-cover shadow-2xl" alt="Food" />
-  
-      <!-- Pizza Card -->
-      <div class="absolute bottom-12 right-4 bg-white p-4 rounded-xl shadow-xl flex items-center space-x-4 scale-110">
-        <img src="/path-to-your-local-pizza-image.png" class="w-14 h-14 rounded-full" alt="Pizza" />
-        <div>
-          <p class="font-semibold text-sm">Italian Pizza</p>
-          <p class="text-yellow-500 text-sm">⭐⭐⭐⭐☆</p>
-          <p class="font-bold text-sm">$7.49</p>
-        </div>
-      </div>
-  
-      <!-- Courier Card -->
-      <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 bg-white py-3 px-6 rounded-full shadow-xl flex items-center space-x-4 scale-110">
-        <img src="https://randomuser.me/api/portraits/men/5.jpg" class="w-10 h-10 rounded-full" alt="Courier" />
-        <div>
-          <p class="font-semibold text-sm">Richard Watson</p>
-          <p class="text-gray-500 text-xs">Food Courier</p>
-        </div>
-        <button class="text-white bg-red-500 p-2 rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 8.25v-1.5A2.25 2.25 0 0013.5 4.5h-3A2.25 2.25 0 008.25 6.75v1.5m7.5 0H8.25m7.5 0V9.75A2.25 2.25 0 0113.5 12h-3a2.25 2.25 0 01-2.25-2.25V8.25" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </main>
-  
+    <main class="w-full flex flex-col md:flex-row justify-between items-center px-5 md:px-10 pt-10">
 
-    <!-- Footer -->
-    <footer class="px-20 pb-10 h-[100px]">
-      <div class="flex items-center space-x-4">
-        <div class="flex -space-x-2">
-          <img src="https://randomuser.me/api/portraits/women/1.jpg" class="w-8 h-8 rounded-full border-2 border-white" />
-          <img src="https://randomuser.me/api/portraits/men/2.jpg" class="w-8 h-8 rounded-full border-2 border-white" />
-          <img src="https://randomuser.me/api/portraits/women/3.jpg" class="w-8 h-8 rounded-full border-2 border-white" />
+        <div class="space-y-6 max-w-xl">
+            <div>
+                <h1 class="text-5xl md:text-6xl 2xl:text-[90px] font-[Rubik] font-bold">Claim Best Offer</h1>
+                <h1 class="text-5xl md:text-6xl 2xl:text-[90px] font-[Rubik] font-bold">
+                    on Fast <span class="text-[#EB0029] italic" style="font-family: 'Lobster Two';">Food</span> &
+                </h1>
+                <h1 class="text-6xl 2xl:text-[100px] text-[#EB0029] italic font-bold" style="font-family: 'Lobster Two';">
+                    Restaurants
+                </h1>
+            </div>
+
+            <p class="font-[Poppins] text-base md:text-xl">
+                Our job is to filling your tummy with delicious food and with fast and free delivery.
+            </p>
+
+            <div class="flex space-x-6">
+                <button class="bg-[#EB0029] px-6 py-3 rounded-full text-white text-lg">Get Started</button>
+                <button class="flex items-center space-x-3 text-lg">
+                    <img src="./img/Frame 8.png" alt="" class="w-10">
+                    <span>Watch Video</span>
+                </button>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <img src="./img/Group 55.png" alt="" class="w-24">
+                <div>
+                    <p class="font-bold font-[Poppins]">Our Happy Customer</p>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-star text-[#FFD43B]"></i>
+                        <p class="font-semibold">4.8</p>
+                        <p class="text-[#828282]">(12.5k Review)</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <p class="font-semibold">Our Happy Customer</p>
-          <p class="text-sm text-yellow-500">4.8 ⭐ (12.5k Review)</p>
+
+        <div class="relative mt-10 md:mt-0 md:w-[500px] md:h-[500px]">
+
+            <img src="./img/Prato.png" alt="" class="hidden md:block w-full">
+
+            <img src="./img/Frame 29.png" alt="" class="absolute top-10 right-0 w-16 md:w-20">
+            
+            <div class="absolute bottom-5 left-5 bg-white shadow rounded-full flex items-center space-x-3 px-4 py-2">
+                <img src="./img/Male Memojis.png" alt="" class="w-10">
+                <div>
+                    <h3 class="font-[Poppins] font-semibold text-sm">Richard Watson</h3>
+                    <p class="text-[#828282] text-xs">Food Courier</p>
+                </div>
+                <button class="bg-[#EB0029] w-10 h-10 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-phone text-white"></i>
+                </button>
+            </div>
+
+            <img src="./img/pizza.png" alt="" class="absolute top-24 right-[-60px] w-28 md:w-32">
+            <img src="./img/noto_fire.svg" alt="" class="absolute top-5 right-5 w-6">
+            <img src="./img/Group 53.png" alt="" class="absolute top-14 right-6 w-8">
+            <img src="./img/Rectangle 8.png" alt="" class="absolute right-28 w-2">
+            <img src="./img/quadrado.png" alt="" class="absolute right-0 bottom-20 w-2">
         </div>
-      </div>
-    </footer>
-  </body>
+    </main>
+
+</body>
 </html>
+
+
+ <!-- eu tentei e não consegui. -->
